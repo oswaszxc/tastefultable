@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(Images/kahoy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.frontpage__main-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.frontpage__wrapper{
+    text-align: center;
+}
+
+.frontpage__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 150px;
+}
+
+.frontpage__logo img{
+    width: 500px;
+    height: 500px;
+    background: #d8f3dc;
+    border-radius: 50%;
+}
+
+.frontpage__btn a{
+    background: #081c15;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #d8f3dc;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.frontpage__btn a:hover{
+    background: #d8f3dc;
+    color: #081c15;
+}
+/* frontpage.css */
+
+.frontpage__main-wrapper {
+    text-align: center;
+}
+
+.frontpage__wrapper {
+    max-width: 600px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+}
+
+.frontpage__logo img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.frontpage__btn {
+    margin-top: 20px;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .frontpage__wrapper {
+        padding: 10px;
+    }
+}

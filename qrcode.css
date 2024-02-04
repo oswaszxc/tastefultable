@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background: url(Images/kahoy.jpg);
+}
+
+#qrCodeContainer {
+    text-align: center;
+}
+
+#qrCodeImage {
+    max-width: 100%;  /* Make the image responsive */
+    height: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.qrcode_btn {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.qrcode_btn a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    display: inline-block; 
+    font-size: 24px;  /* Responsive font size */
+}
+
+.qrcode_btn a:hover {
+    background-color: #45a049;
+}
+
+.qrcode_txt {
+    color: white;
+    font-size: 2vw;  /* Responsive font size */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    #qrCodeImage {
+        width: 80%;  /* Adjust width for smaller screens */
+    }
+
+    .qrcode_btn a {
+        font-size: 6vw;  /* Adjust font size for smaller screens */
+    }
+
+    .qrcode_txt {
+        font-size: 3vw;  /* Adjust font size for smaller screens */
+    }
+}
